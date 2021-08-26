@@ -1,31 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.98c48abf.chunk.css",
-    "main.js": "/static/js/main.53078086.chunk.js",
-    "main.js.map": "/static/js/main.53078086.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4fcfd21d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4fcfd21d.js.map",
-    "static/js/2.d1150865.chunk.js": "/static/js/2.d1150865.chunk.js",
-    "static/js/2.d1150865.chunk.js.map": "/static/js/2.d1150865.chunk.js.map",
-    "static/js/3.821c19b8.chunk.js": "/static/js/3.821c19b8.chunk.js",
-    "static/js/3.821c19b8.chunk.js.map": "/static/js/3.821c19b8.chunk.js.map",
+    "main.js": "/static/js/main.0a165241.chunk.js",
+    "main.js.map": "/static/js/main.0a165241.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.28e14cb5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.28e14cb5.js.map",
+    "static/js/2.7db8afb8.chunk.js": "/static/js/2.7db8afb8.chunk.js",
+    "static/js/2.7db8afb8.chunk.js.map": "/static/js/2.7db8afb8.chunk.js.map",
+    "static/js/3.96379289.chunk.js": "/static/js/3.96379289.chunk.js",
+    "static/js/3.96379289.chunk.js.map": "/static/js/3.96379289.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.98c48abf.chunk.css.map": "/static/css/main.98c48abf.chunk.css.map",
-    "static/js/2.d1150865.chunk.js.LICENSE.txt": "/static/js/2.d1150865.chunk.js.LICENSE.txt",
-    "static/media/Call_Today.c6d624fc.png": "/static/media/Call_Today.c6d624fc.png",
-    "static/media/RF_Logo.f60c1491.png": "/static/media/RF_Logo.f60c1491.png",
-    "static/media/banner-cabinet-install.a7522aea.jpg": "/static/media/banner-cabinet-install.a7522aea.jpg",
-    "static/media/banner-flooring.1f2830c3.jpg": "/static/media/banner-flooring.1f2830c3.jpg",
-    "static/media/banner-hardwood-flooring.90905797.jpg": "/static/media/banner-hardwood-flooring.90905797.jpg",
-    "static/media/banner-painting.1b8c328d.jpg": "/static/media/banner-painting.1b8c328d.jpg",
-    "static/media/banner-tile-flooring.0c175e45.jpg": "/static/media/banner-tile-flooring.0c175e45.jpg",
-    "static/media/landing-bg.a2cea7d6.jpg": "/static/media/landing-bg.a2cea7d6.jpg",
-    "static/media/index.css": "/static/media/services-flooring.233f6bdf.jpg"
+    "static/js/2.7db8afb8.chunk.js.LICENSE.txt": "/static/js/2.7db8afb8.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/services-flooring.233f6bdf.jpg",
+    "static/media/under-construction.bbfa552b.png": "/static/media/under-construction.bbfa552b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.4fcfd21d.js",
-    "static/js/2.d1150865.chunk.js",
+    "static/js/runtime-main.28e14cb5.js",
+    "static/js/2.7db8afb8.chunk.js",
     "static/css/main.98c48abf.chunk.css",
-    "static/js/main.53078086.chunk.js"
+    "static/js/main.0a165241.chunk.js"
   ]
 }
