@@ -1,0 +1,39 @@
+name: CD-PersonalSite
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  deploy:
+    defaults:
+      run:
+        working-directory: .
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+
+      - name: install node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+      
+      - name: install react dependencies
+        run: npm install
+      
+      - name: build react client
+        run: npm run build
+      
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-2
+      
+      - name: Replace S3 Bucket Files and invalidate cloudfront
+        run: |
+          aws s3 sync build s3://infinity-woodworks-web --delete --cache-control 'no-cache' --acl public-read
+          aws cloudfront create-invalidation --distribution-id E28G7QH1Q729MR --paths \"/*\" --region us-east-1

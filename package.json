@@ -1,5 +1,5 @@
 {
-  "name": "radiantingflooring",
+  "name": "infinitywoodworks",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,7 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "cloudfront:invalidate": "aws cloudfront create-invalidation --distribution-id E28G7QH1Q729MR --paths \"/*\" --region us-east-1 --profile personal",
+    "cloudfront:invalidate": "aws cloudfront create-invalidation --distribution-id E28G7QH1Q729MR --paths \"/*\" --region us-east-1 --profile Personal",
     "s3:upload:build": "aws s3 sync build/ s3://infinity-woodworks-web --delete --region us-east-1 --profile Personal",
     "deploy": "npm run build && npm run s3:upload:build && npm run cloudfront:invalidate",
     "test": "react-scripts test",
