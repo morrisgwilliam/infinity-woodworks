@@ -9,7 +9,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 
 // @material-ui/icons
-import { Apps, Star, ContactPhone } from "@material-ui/icons";
+import { Apps } from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "../CustomDropdown/CustomDropdown.js";
@@ -26,7 +26,7 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
-          buttonText="Services"
+          buttonText="Pallet Guide"
           buttonProps={{
             className: classes.navLink,
             color: "transparent",
@@ -34,65 +34,40 @@ export default function HeaderLinks(props) {
           buttonIcon={Apps}
           dropdownList={[
             <Link
-              to="/services/hardwood-floor-installation"
+              to="/glossary"
               className={classes.dropdownLink}
             >
-              Hardwood Floor Installation
+              Glossary
             </Link>,
             <Link
-              to="/services/tile-installation"
+              to="/safety"
               className={classes.dropdownLink}
             >
-              Tile Installation
+              Safety
             </Link>,
             <Link
-              to="/services/flooring-installation"
+              to="/types"
               className={classes.dropdownLink}
             >
-              Flooring Installation
-            </Link>,
-            <Link
-              to="/services/painting-services"
-              className={classes.dropdownLink}
-            >
-              Painting Services
-            </Link>,
-            <Link
-              to="/services/cabinet-installation"
-              className={classes.dropdownLink}
-            >
-              Cabinet Installation
-            </Link>,
+              Types
+            </Link>
           ]}
         />
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.yelp.com/biz/radianting-flooring-and-installation-pomona"
+          href="https://www.linkedin.com/in/infinity-wood-works-76348a212/"
           target="_blank"
           color="transparent"
           className={classes.navLink}
         >
-          <i className={classes.socialIcons + " fab fa-yelp mr-2"} />
-          Yelp
+          <i className={classes.socialIcons + " fab fa-linkedin-in mr-2"} />
+          LinkedIn
         </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
         <Button
-          color="transparent"
-          href="https://www.facebook.com/RadiantingFlooring/"
+          href="https://www.instagram.com/infinitywoodworkscorp/"
           target="_blank"
-          className={classes.navLink}
-        >
-          <i className={classes.socialIcons + " fab fa-facebook mr-2"} />
-          Facebook
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
           color="transparent"
-          href="https://www.instagram.com/radiantingflooring/"
-          target="_blank"
           className={classes.navLink}
         >
           <i className={classes.socialIcons + " fab fa-instagram mr-2"} />

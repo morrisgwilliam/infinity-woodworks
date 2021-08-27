@@ -17,7 +17,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Radianting Flooring"
+        brand="Infinity Woodworks"
         rightLinks={<HeaderLinks {...props} />}
         fixed
         changeColorOnScroll={{

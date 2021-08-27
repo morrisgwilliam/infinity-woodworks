@@ -1,3 +1,7 @@
+.color-primary {
+  color: #cc9933 !important
+}
+
 /* Slider */
 .slick-slider {
   position: relative;

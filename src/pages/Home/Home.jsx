@@ -23,8 +23,8 @@ const Home = (props) => {
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>Your Story Starts With Us.</h1>
               <h5 style={{ color: `white` }}>
-                Here at Radianting Flooring we promote and install only premium
-                tiles, laminates, hardwoods, and carpets. We pride ourselves in
+                Here at <span className="color-primary">Infinity Woodworks</span> we promote and install only premium
+                pallets. We pride ourselves in
                 the highest level of customer satisfaction!
               </h5>
             </GridItem>
@@ -48,12 +48,11 @@ const Home = (props) => {
               >
                 <h5 className="my-auto">
                   {" "}
-                  The owners, Moises &amp; Andres, are skilled flooring
-                  professionals and have a combined{" "}
+                  At Infinity Woodworks, you will find{" "}
                   <strong style={{ color: `#cc9933`, fontSize: `1.5rem` }}>
                     <em>20+ years experience</em>
                   </strong>{" "}
-                  in the flooring business. My{" "}
+                  in the pallet business. Our{" "}
                   <strong style={{ color: `#cc9933`, fontSize: `1.5rem` }}>
                     <em>professionalism</em>
                   </strong>{" "}
@@ -61,15 +60,8 @@ const Home = (props) => {
                   <strong style={{ color: `#cc9933`, fontSize: `1.5rem` }}>
                     <em>product knowledge</em>
                   </strong>{" "}
-                  , installation expertise, and industry training has kept us
-                  up-to-date on the latest trends in flooring sales,
-                  <strong style={{ color: `#cc9933`, fontSize: `1.5rem` }}>
-                    <em> installation</em>
-                  </strong>{" "}
-                  , and{" "}
-                  <strong style={{ color: `#cc9933`, fontSize: `1.5rem` }}>
-                    <em>services</em>
-                  </strong>{" "}
+                   has kept us
+                  up-to-date on the latest trends!
                 </h5>
               </div>
             </GridItem>
@@ -80,12 +72,15 @@ const Home = (props) => {
           className="text-center bg-white py-3 mt-5"
           //style={{ marginTop: `150px` }}
         >
-          <img
+          <p className="text-dark">
+            Some Image
+          </p>
+          {/* <img
             src={CallTodayImage}
             alt="Call Today"
             style={{ minWidth: `50%`, maxWidth: `55%` }}
             className="mx-auto"
-          />
+          /> */}
         </div>
 
         <SectionCarousel />

@@ -33,27 +33,17 @@ export default function Footer(props) {
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.yelp.com/biz/radianting-flooring-and-installation-pomona"
+                href="https://www.linkedin.com/in/infinity-wood-works-76348a212/"
                 className={classes.block + " primary-hover"}
                 target="_blank"
               >
-                <i className={classes.socialIcons + " fab fa-yelp mr-2"} />
-                Yelp
+                <i className={classes.socialIcons + " fab fa-linkedin-in mr-2"} />
+                LinkedIn
               </a>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <a
-                href="https://www.facebook.com/RadiantingFlooring/"
-                className={classes.block + " primary-hover"}
-                target="_blank"
-              >
-                <i className={classes.socialIcons + " fab fa-facebook mr-2"} />
-                Facebook
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.instagram.com/radiantingflooring/"
+                href="https://www.instagram.com/infinitywoodworkscorp/"
                 className={classes.block + " primary-hover"}
                 target="_blank"
               >
