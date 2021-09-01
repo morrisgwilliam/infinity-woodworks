@@ -8,10 +8,11 @@ import classNames from "classnames";
 import { Grid } from "@material-ui/core";
 import Parallax from "../../components/Parallax/Parallax.js";
 import Banner from "../../assets/img/banner-flooring.jpg";
+import Pallets from "../../assets/img/pallet-style.jpg";
 
 const useStyles = makeStyles(styles);
 
-const HardWoodFloor = (props) => {
+const Types = (props) => {
   const classes = useStyles();
   return (
     <Layout {...props}>
@@ -19,7 +20,7 @@ const HardWoodFloor = (props) => {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Flooring Installation</h1>
+              <h1 className={classes.title}>Pallet Types</h1>
             </GridItem>
           </GridContainer>
         </div>
@@ -27,9 +28,6 @@ const HardWoodFloor = (props) => {
       <div className={classNames(classes.main) + " bg-dark"}>
         <div className={classes.container + " p-3"}>
           <Grid container alignItems="center" alignContent="center">
-            <GridItem xs={12} sm={6} className="p-3">
-              <div className="circle-image service-flooring"></div>
-            </GridItem>
             <GridItem xs={12} sm={6} className="p-3">
               <div
                 style={{
@@ -40,22 +38,12 @@ const HardWoodFloor = (props) => {
                 className="p-3 rounded"
               >
                 <h5 className="my-auto">
-                  Whether you're looking for{" "}
-                  <strong style={{ color: `#cc9933`, fontSize: `1.5rem` }}>
-                    <em>hardwood floor, marble, or ceramic installation</em>
-                  </strong>
-                  , we provide the comprehensive services you need. We offer
-                  support and guidance through every step of the process, from
-                  measuring to lamination services. The contractors on our
-                  flooring installation team do their best to streamline the
-                  process without sacrificing the quality of the end product.
-                  Consider{" "}
-                  <strong style={{ color: `#cc9933`, fontSize: `1.5rem` }}>
-                    <em>Radianting Flooring your go-to flooring contractor</em>
-                  </strong>
-                  .
+                There are many pallet types to choose from. Below are the most common types available. Use this as a guide when ordering your pallets.
                 </h5>
               </div>
+            </GridItem>
+            <GridItem className="p-3" xs={12}>
+                <img src={Pallets} className="w-100 img-fluid rounded shadow-lg" alt="Pallet Styles"/>
             </GridItem>
           </Grid>
         </div>
@@ -69,4 +57,4 @@ const HardWoodFloor = (props) => {
   );
 };
 
-export default HardWoodFloor;
+export default Types;

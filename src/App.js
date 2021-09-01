@@ -17,29 +17,19 @@ function App() {
         <Switch>
           <Route path={["/"]} exact component={Pages.Home} />
           <Route
-            path={["/services/hardwood-floor-installation"]}
+            path={["/glossary"]}
             exact
-            component={Pages.Services.HardWoodFloor}
+            component={Pages.Services.Glossary}
           />
           <Route
-            path={["/services/tile-installation"]}
+            path={["/safety"]}
             exact
-            component={Pages.Services.TileInstallation}
+            component={Pages.Services.Safety}
           />
           <Route
-            path={["/services/flooring-installation"]}
+            path={["/types"]}
             exact
-            component={Pages.Services.FlooringInstallation}
-          />
-          <Route
-            path={["/services/painting-services"]}
-            exact
-            component={Pages.Services.PaintingServices}
-          />
-          <Route
-            path={["/services/cabinet-installation"]}
-            exact
-            component={Pages.Services.CabinetInstallation}
+            component={Pages.Services.Types}
           />
           <Route component={Pages.PageNotFound} />
         </Switch>

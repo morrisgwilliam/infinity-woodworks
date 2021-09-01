@@ -1,14 +1,10 @@
-import HardWoodFloor from "./HardWoodFloor";
-import FlooringInstallation from "./FlooringInstallation";
-import CabinetInstallation from "./CabinetInstallation";
-import PaintingServices from "./PaintingServices";
-import TileInstallation from "./TileInstallation";
+import Types from "./Types";
+import Glossary from "./Glossary";
+import Safety from "./Safety";
 
 const pages = {
-  HardWoodFloor,
-  FlooringInstallation,
-  CabinetInstallation,
-  PaintingServices,
-  TileInstallation,
+  Types,
+  Safety,
+  Glossary
 };
 export default pages;

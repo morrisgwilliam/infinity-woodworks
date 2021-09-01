@@ -1,8 +1,9 @@
 import React from "react";
 import Layout from "../../components/Layout";
-import Logo from "../../assets/RF_Logo.png";
 import Parallax from "../../components/Parallax/Parallax.js";
 import landingBG from "../../assets/img/landing-bg.jpg";
+import SectionImage from "../../assets/img/Home-Image.jpg";
+import PremiumQuality from "../../assets/img/premium-quality.png";
 import GridContainer from "../../components/Grid/GridContainer.js";
 import GridItem from "../../components/Grid/GridItem";
 import { makeStyles } from "@material-ui/core/styles";
@@ -10,7 +11,6 @@ import styles from "../../assets/jss/material-kit-react/views/landingPage.js";
 import classNames from "classnames";
 import { Grid } from "@material-ui/core";
 import SectionCarousel from "./SectionCarousel";
-import CallTodayImage from "../../assets/Call_Today.png";
 const useStyles = makeStyles(styles);
 
 const Home = (props) => {
@@ -35,7 +35,7 @@ const Home = (props) => {
         <div className={classes.container + " p-3"}>
           <Grid container alignItems="center" alignContent="center">
             <GridItem xs={12} sm={6} className="p-3">
-              <img src={Logo} alt="business logo" style={{ width: `100%` }} />
+              <img src={PremiumQuality} alt="top quality" className="rounded" style={{ width: `100%` }} />
             </GridItem>
             <GridItem xs={12} sm={6} className="p-3">
               <div
@@ -72,15 +72,12 @@ const Home = (props) => {
           className="text-center bg-white py-3 mt-5"
           //style={{ marginTop: `150px` }}
         >
-          <p className="text-dark">
-            Some Image
-          </p>
-          {/* <img
-            src={CallTodayImage}
+          <img
+            src={SectionImage}
             alt="Call Today"
             style={{ minWidth: `50%`, maxWidth: `55%` }}
-            className="mx-auto"
-          /> */}
+            className="mx-auto rounded shadow"
+          />
         </div>
 
         <SectionCarousel />

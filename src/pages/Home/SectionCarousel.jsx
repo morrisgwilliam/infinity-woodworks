@@ -14,11 +14,53 @@ export default function SectionCarousel() {
   },[])
   return (
     <div className={classes.section} style={{ minHeight: `650px` }}>
-      <Typography className="mb-5" variant="h3" align="center" display="block"><i className={classes.socialIcons + " fab fa-instagram mr-2"} />INSTAGRAM</Typography>
-      {/* <div className={classes.container}>
+      <Typography className="mb-5" variant="h3" align="center" display="block">Contact Us</Typography>
+       <div className={classes.container}>
         <Grid container>
           <Grid item xs={12} sm={12} md={6}>
-
+            <h5>
+            <i className={classes.socialIcons + " fas fa-map-marker mr-2 color-primary"} />Address
+            </h5>
+            <p>
+              PO Box 310391, Fontana, CA 92331
+            </p>
+            <h5>
+            <i className={classes.socialIcons + " fas fa-map-marker mr-2 color-primary"} />Physical Address
+            </h5>
+            <p>
+              19284 Kendall Drive, San Bernardino, CA 92407
+            </p>
+            <h5>
+            <i className={classes.socialIcons + " fas fa-phone mr-2 color-primary"} />Phone
+            </h5>
+            <p>
+              (909) 587-0550
+            </p>
+            <h5>
+            <i className={classes.socialIcons + " fas fa-phone mr-2 color-primary"} />Operating Hours
+            </h5>
+            <p>
+              <b className="color-primary">Monday</b>: 7:00AM - 4:00PM
+              <br />
+              <b className="color-primary">Tuesday</b>: 7:00AM - 4:00PM
+              <br />
+              <b className="color-primary">Wednesday</b>: 7:00AM - 4:00PM
+              <br />
+              <b className="color-primary">Thursday</b>: 7:00AM - 4:00PM
+              <br />
+              <b className="color-primary">Friday</b>: 7:00AM - 4:00PM
+              <br />
+              <b className="color-primary">Saturday</b>: 7:00AM - 4:00PM
+              <br />
+              <b className="color-primary">Sunday</b>: Closed
+            </p>
+          </Grid>
+          <Grid item xs={12} md={6}>
+          <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93869.62957669873!2d-117.41394568808163!3d34.218295978864745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c34fc80a045d81%3A0xfaaede68d8156e6d!2s19284%20Kendall%20Dr%2C%20San%20Bernardino%2C%20CA%2092407!5e0!3m2!1sen!2sus!4v1630466056689!5m2!1sen!2sus" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
+          </Grid>
+        </Grid>
+      </div>
+{/*
 <div>
               <center>
                       <blockquote

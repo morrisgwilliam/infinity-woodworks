@@ -256,7 +256,7 @@ a.primary-hover:focus {
   color: white;
 }
 .service-flooring {
-  background-image: url("./assets//img//services-flooring.jpg");
+  background-image: url("./assets//img//pallet.jpg");
   background-position: bottom right;
   min-height: 500px;
 }
