@@ -11,6 +11,7 @@ import styles from "../../assets/jss/material-kit-react/views/landingPage.js";
 import classNames from "classnames";
 import { Grid } from "@material-ui/core";
 import SectionCarousel from "./SectionCarousel";
+import QuoteForm from "./QuoteForm";
 const useStyles = makeStyles(styles);
 
 const Home = (props) => {
@@ -79,7 +80,7 @@ const Home = (props) => {
             className="mx-auto rounded shadow"
           />
         </div>
-
+        <QuoteForm />
         <SectionCarousel />
       </div>
     </Layout>
