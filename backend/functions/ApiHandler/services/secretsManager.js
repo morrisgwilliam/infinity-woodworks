@@ -5,9 +5,7 @@ const secretsClient = new AWS.SecretsManager({
 });
 
 const secretNames = {
-    accuity: "Accuity-Scheduling",
-    accunet: "Accunet-Api-Key",
-    sendgrid: "Accunet-Sendgrid"
+    sendgrid: "SendGrid"
 }
 
 const getSecret = async (secretName) => {
