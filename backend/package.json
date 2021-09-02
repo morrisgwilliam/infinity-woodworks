@@ -1,0 +1,40 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "bin": {
+    "backend": "bin/backend.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk",
+    "deploy:prod": "export ENVIRONMENT=PROD && npm run build && cdk bootstrap --profile Accunet && cdk deploy --profile Accunet --require-approval never && rm -r cdk.out",
+    "deploy:dev": "export ENVIRONMENT=DEV && npm run build && cdk bootstrap --profile AffinityIT && cdk deploy --profile AffinityIT --require-approval never && rm -r cdk.out",
+    "cdk-synth-template:Backend": "npm run build && cdk synth --no-staging BackendStack > BackendStack-template.yml",
+    "start-api:Backend:DEV": "export ENVIRONMENT=DEV && npm run cdk-synth-template:Backend && sam local start-api -t ./BackendStack-template.yml -p 4000 -d 5858",
+    "start-api:Backend:PROD": "export ENVIRONMENT=PROD && npm run cdk-synth-template:Backend && sam local start-api -t ./BackendStack-template.yml -p 4000 -d 5858",
+    "invokeApiHandler": "npm run cdk-synth-template:Backend && sam local invoke ApiHandler5E7490E8 -t ./BackendStack-template.yml -e ./functions/ApiHandler/mock-events/application-create.json -d 5858"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.94.1",
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "aws-cdk": "1.94.1",
+    "jest": "^26.4.2",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigateway": "^1.95.0",
+    "@aws-cdk/aws-cloudfront": "^1.105.0",
+    "@aws-cdk/aws-dynamodb": "^1.95.0",
+    "@aws-cdk/aws-iam": "^1.95.0",
+    "@aws-cdk/aws-lambda": "^1.95.0",
+    "@aws-cdk/aws-s3": "^1.105.0",
+    "@aws-cdk/aws-secretsmanager": "^1.106.1",
+    "@aws-cdk/core": "1.95.0",
+    "source-map-support": "^0.5.16"
+  }
+}

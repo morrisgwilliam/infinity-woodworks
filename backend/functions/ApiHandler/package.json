@@ -1,0 +1,22 @@
+{
+  "name": "apihandler",
+  "version": "1.0.0",
+  "description": "The Handler for all Api Requests to the Accunet-Journeys Api. This lambda runs an express server to process requests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "William Morris",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.5",
+    "acuityscheduling": "^0.1.9",
+    "aws-sdk": "^2.851.0",
+    "aws-serverless-express": "^3.4.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "dynamoose": "^2.7.0",
+    "express": "^4.17.1",
+    "uuid": "^8.3.2"
+  }
+}

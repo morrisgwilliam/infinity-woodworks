@@ -37,7 +37,7 @@ export default function SectionCarousel() {
               (909) 587-0550
             </p>
             <h5>
-            <i className={classes.socialIcons + " fas fa-phone mr-2 color-primary"} />Operating Hours
+            <i className={classes.socialIcons + " fas fa-clock mr-2 color-primary"} />Operating Hours
             </h5>
             <p>
               <b className="color-primary">Monday</b>: 7:00AM - 4:00PM
