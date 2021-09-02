@@ -1,7 +1,7 @@
 const process = require('process');
 const twilioService = require("../services/twilio");
 
-const sendReschedulingEmail = async (req, res) => {
+const sendQuoteEmail = async (req, res) => {
     // https://developers.acuityscheduling.com/reference#get-appointments
     try {
         process.stdout.write("\nINFO ------ LOGGING REQUEST BODY ------\n" + JSON.stringify(req.body) + "\n\n");
@@ -23,5 +23,5 @@ const sendReschedulingEmail = async (req, res) => {
 }
 
 module.exports = {
-    sendReschedulingEmail
+    sendQuoteEmail
 }

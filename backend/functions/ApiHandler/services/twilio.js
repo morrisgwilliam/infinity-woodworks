@@ -1,5 +1,5 @@
 const sgMail = require('@sendgrid/mail');
-const secretsManager = require("./secretsManager")
+//const secretsManager = require("./secretsManager")
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
@@ -10,8 +10,9 @@ const templateID = "d-f361ed369f684a74b3422e8055c24589"
 
 const sendQuoteEmail = async (data) => {
 	try {
-		const secret = await secretsManager.getSecret(secretsManager.secretNames.sendgrid)
-		sgMail.setApiKey(secret.ApiKey);
+		//const secret = await secretsManager.getSecret(secretsManager.secretNames.sendgrid)
+		// sgMail.setApiKey(secret.ApiKey);
+		sgMail.setApiKey("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");
 		const msg = {
 			to: toAddress,
 			from: fromAddress,

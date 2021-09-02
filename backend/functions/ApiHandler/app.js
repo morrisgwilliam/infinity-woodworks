@@ -2,15 +2,7 @@ const awsServerlessExpressMiddleware = require("aws-serverless-express/middlewar
 const bodyParser = require("body-parser")
 const express = require("express");
 const router = require("./routes/router");
-const dyanamoose = require("dynamoose");
 // const AWS = require("aws-sdk")
-
-// var dynamodb = new AWS.DynamoDB({correctClockSkew: true});
-const ddb = new dyanamoose.aws.sdk.DynamoDB({correctClockSkew: true});
-dyanamoose.aws.ddb.set(ddb)
-const dynamoose = require("dynamoose")
-
-dynamoose.logger.providers.set(console)
 
 const app = express();
 app.use(bodyParser.json());
