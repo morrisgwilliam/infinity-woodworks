@@ -22,7 +22,7 @@ Resources:
     Properties:
       Code:
         S3Bucket:
-          Ref: AssetParameters69db1ca7885d132308e13c7b9736c66fccc6d9d92d4c1aed453478ace994cce3S3Bucket8986BAC4
+          Ref: AssetParameters712c56e11df94daf9cb4e60f61c5dce2c7ffa3b21e37e30f53303ff23a8748e0S3BucketEC56CC6C
         S3Key:
           Fn::Join:
             - ""
@@ -30,12 +30,12 @@ Resources:
                   - 0
                   - Fn::Split:
                       - "||"
-                      - Ref: AssetParameters69db1ca7885d132308e13c7b9736c66fccc6d9d92d4c1aed453478ace994cce3S3VersionKeyA34226B6
+                      - Ref: AssetParameters712c56e11df94daf9cb4e60f61c5dce2c7ffa3b21e37e30f53303ff23a8748e0S3VersionKey74DECE65
               - Fn::Select:
                   - 1
                   - Fn::Split:
                       - "||"
-                      - Ref: AssetParameters69db1ca7885d132308e13c7b9736c66fccc6d9d92d4c1aed453478ace994cce3S3VersionKeyA34226B6
+                      - Ref: AssetParameters712c56e11df94daf9cb4e60f61c5dce2c7ffa3b21e37e30f53303ff23a8748e0S3VersionKey74DECE65
       Role:
         Fn::GetAtt:
           - ApiHandlerServiceRole592E70E9
@@ -277,15 +277,15 @@ Resources:
       aws:cdk:path: BackendStack/CDKMetadata/Default
     Condition: CDKMetadataAvailable
 Parameters:
-  AssetParameters69db1ca7885d132308e13c7b9736c66fccc6d9d92d4c1aed453478ace994cce3S3Bucket8986BAC4:
+  AssetParameters712c56e11df94daf9cb4e60f61c5dce2c7ffa3b21e37e30f53303ff23a8748e0S3BucketEC56CC6C:
     Type: String
-    Description: S3 bucket for asset "69db1ca7885d132308e13c7b9736c66fccc6d9d92d4c1aed453478ace994cce3"
-  AssetParameters69db1ca7885d132308e13c7b9736c66fccc6d9d92d4c1aed453478ace994cce3S3VersionKeyA34226B6:
+    Description: S3 bucket for asset "712c56e11df94daf9cb4e60f61c5dce2c7ffa3b21e37e30f53303ff23a8748e0"
+  AssetParameters712c56e11df94daf9cb4e60f61c5dce2c7ffa3b21e37e30f53303ff23a8748e0S3VersionKey74DECE65:
     Type: String
-    Description: S3 key for asset version "69db1ca7885d132308e13c7b9736c66fccc6d9d92d4c1aed453478ace994cce3"
-  AssetParameters69db1ca7885d132308e13c7b9736c66fccc6d9d92d4c1aed453478ace994cce3ArtifactHash56815F18:
+    Description: S3 key for asset version "712c56e11df94daf9cb4e60f61c5dce2c7ffa3b21e37e30f53303ff23a8748e0"
+  AssetParameters712c56e11df94daf9cb4e60f61c5dce2c7ffa3b21e37e30f53303ff23a8748e0ArtifactHash21872EE9:
     Type: String
-    Description: Artifact hash for asset "69db1ca7885d132308e13c7b9736c66fccc6d9d92d4c1aed453478ace994cce3"
+    Description: Artifact hash for asset "712c56e11df94daf9cb4e60f61c5dce2c7ffa3b21e37e30f53303ff23a8748e0"
 Outputs:
   BackendApiEndpoint3AD48CE9:
     Value:
