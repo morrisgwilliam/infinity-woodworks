@@ -20,7 +20,7 @@ const getSecret = async (secretName) => {
         return secret
         // }
     } catch (error) {
-        console.log("-----ERRRRRRRRRORRRRRR-------- \n Unable to get Accuity Secret Credentials." + error.message)
+        console.log("-----ERRRRRRRRRORRRRRR-------- \n Unable to get SendGrid Secret Credentials." + error.message)
     }
 }
 

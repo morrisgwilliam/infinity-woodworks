@@ -104,3 +104,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+cdk.out
+backend/BackendStack-template.yml
