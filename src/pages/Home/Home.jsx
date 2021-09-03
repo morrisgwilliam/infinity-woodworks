@@ -24,8 +24,7 @@ const Home = (props) => {
             <GridItem xs={12} sm={12} md={6}>
               <h1 className={classes.title}>Your Story Starts With Us.</h1>
               <h5 style={{ color: `white` }}>
-                Here at <span className="color-primary">Infinity Woodworks</span> we promote and install only premium
-                pallets. We pride ourselves in
+                Here at <span className="color-primary">Infinity Woodworks</span> we promote and install pallets of all sizes. We pride ourselves in
                 the highest level of customer satisfaction!
               </h5>
             </GridItem>

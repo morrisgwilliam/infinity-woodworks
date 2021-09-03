@@ -3,7 +3,7 @@ const secretsManager = require("./secretsManager")
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-const toAddress = "contact@morrisgwilliam.com"
+const toAddress = "infinity@infinitywoodworks.org"
 const fromAddress = "contact@morrisgwilliam.com"
 const templateID = "d-f361ed369f684a74b3422e8055c24589"
 
